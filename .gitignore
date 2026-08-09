@@ -1,0 +1,50 @@
+# C/C++ 编译产物
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+
+# 临时文件
+tempCodeRunnerFile.cpp
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 测试数据和运行日志
+*.in
+*.ans
+*.log
+*.dat
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# IDE 配置和缓存
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# LaTeX 中间文件（保留 .tex、.md 和必要的 .pdf）
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+
+# 本地运行生成的数据
+*.cache
+*.local
+runtime-data/
