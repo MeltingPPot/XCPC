@@ -48,3 +48,6 @@ __pycache__/
 *.cache
 *.local
 runtime-data/
+
+AGENT.md
+AGENTS.md
