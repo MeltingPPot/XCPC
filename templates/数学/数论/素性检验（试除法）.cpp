@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-bool isPrime(long long n) {
+bool isPrime(long long n){
     if(n < 2)
         return false;
     if(n % 2 == 0)

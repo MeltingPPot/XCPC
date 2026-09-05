@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 using ld = long double;
 struct Point {
@@ -7,20 +7,20 @@ struct Point {
         return {x - p.x, y - p.y};
     }
 };
-ld cross(Point a, Point b) {
+ld cross(Point a, Point b){
     return a.x * b.y - a.y * b.x;
 }
-ld dist2(Point a, Point b) {
+ld dist2(Point a, Point b){
     ld x = a.x - b.x, y = a.y - b.y;
     return x * x + y * y;
 }
-ld convexDiameter2(const vector<Point> &p) {
+ld convexDiameter2(const vector<Point> &p){
     int n = p.size();
     if(n < 2)
         return 0;
     int j = 1;
     ld ans = 0;
-    for(int i = 0; i < n; ++i) {
+    for(int i = 0; i < n; ++i){
         int ni = (i + 1) % n;
         while(fabsl(cross(p[ni] - p[i], p[(j + 1) % n] - p[i])) >
               fabsl(cross(p[ni] - p[i], p[j] - p[i])))

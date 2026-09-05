@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 using i64 = long long;
 
@@ -6,7 +6,7 @@ struct Matrix {
     int n;
     i64 mod;
     vector<vector<i64>> a;
-    Matrix(int n, i64 mod, bool identity = false) : n(n), mod(mod), a(n, vector<i64>(n)) {
+    Matrix(int n, i64 mod, bool identity = false) : n(n), mod(mod), a(n, vector<i64>(n)){
         if(identity)
             for(int i = 0; i < n; ++i)
                 a[i][i] = 1;
@@ -21,7 +21,7 @@ struct Matrix {
         return c;
     }
 };
-Matrix matrixPow(Matrix a, long long e) {
+Matrix matrixPow(Matrix a, long long e){
     Matrix r(a.n, a.mod, true);
     for(; e; e >>= 1, a = a * a)
         if(e & 1)

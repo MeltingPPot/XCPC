@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 using ld = long double;
 struct Point {
@@ -13,14 +13,14 @@ struct Point {
         return {x * k, y * k};
     }
 };
-ld dot(Point a, Point b) {
+ld dot(Point a, Point b){
     return a.x * b.x + a.y * b.y;
 }
 struct Circle {
     Point o;
     ld r;
 };
-vector<Point> lineCircleIntersection(Point a, Point b, Circle c) {
+vector<Point> lineCircleIntersection(Point a, Point b, Circle c){
     Point v = b - a;
     ld t = dot(c.o - a, v) / dot(v, v);
     Point h = a + v * t;

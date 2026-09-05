@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-vector<vector<long long>> stirlingSecond(int n, long long mod) {
+vector<vector<long long>> stirlingSecond(int n, long long mod){
     vector<vector<long long>> s(n + 1, vector<long long>(n + 1));
     s[0][0] = 1;
     for(int i = 1; i <= n; ++i)

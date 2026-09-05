@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-template <class F> double goldenSection(double left, double right, F f) {
+template <class F> double goldenSection(double left, double right, F f){
     constexpr double ratio = (sqrt(5.0) - 1) / 2;
     double x1 = right - ratio * (right - left), x2 = left + ratio * (right - left), f1 = f(x1),
            f2 = f(x2);

@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-bool wythoffLosing(long long a, long long b) {
+bool wythoffLosing(long long a, long long b){
     if(a > b)
         swap(a, b);
     long long k = b - a;

@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-vector<int> dagSG(const vector<vector<int>> &graph) {
+vector<int> dagSG(const vector<vector<int>> &graph){
     int n = graph.size();
     vector<int> sg(n, -1);
     auto dfs = [&](auto &&self, int u) -> int {

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 using i64 = long long;
 
@@ -12,7 +12,7 @@ struct Combinatorics {
                 r = r * a % mod;
         return r;
     }
-    Combinatorics(int n, i64 mod) : mod(mod), fac(n + 1, 1), ifac(n + 1) {
+    Combinatorics(int n, i64 mod) : mod(mod), fac(n + 1, 1), ifac(n + 1){
         for(int i = 1; i <= n; ++i)
             fac[i] = fac[i - 1] * i % mod;
         ifac[n] = pow(fac[n], mod - 2);

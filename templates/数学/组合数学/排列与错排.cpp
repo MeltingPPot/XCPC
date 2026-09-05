@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-vector<long long> derangements(int n, long long mod) {
+vector<long long> derangements(int n, long long mod){
     vector<long long> d(n + 1);
     if(n >= 0)
         d[0] = 1;
